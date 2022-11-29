@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.8s;
+}
+body{
+    background-color: gray;
+    transition: all 0.8s;
+}
+
+
+.container__father {
+    position: relative;
+    min-width: 1600px;
+    height: 1800px;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
