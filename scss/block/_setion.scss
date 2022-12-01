@@ -1,0 +1,264 @@
+.title__car {
+    margin-top: 80px;
+    text-align: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.sena__block {
+    max-width: 930px;
+    height: 640px;
+
+    margin: 100px auto;
+
+    .block__top__block {
+        width: 100%;
+        height: 50%;
+        flex-wrap: wrap;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .sena__card1 {
+            width: 195px;
+            height: 273px;
+            box-shadow: 0px 10px 20px rgba(32, 38, 71, 0.25);
+            border-radius: 10px;
+            flex-wrap: wrap;
+
+            .img__card1 {
+                width: 60%;
+                height: 70px;
+
+                margin: 10px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .card1__title {
+                font-style: normal;
+                font-weight: 800;
+                font-size: 15px;
+                line-height: 17px;
+                text-align: center;
+
+            }
+
+            .card1__text {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .sena__sena {
+                font-style: normal;
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 16px;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .sena__card__btn {
+                background: #00D465;
+                border-radius: 5px;
+                padding: 10px 20px;
+                border: none;
+                margin-left: 25px;
+                margin-top: 14px;
+            }
+
+        }
+
+    }
+
+    .block__bottom__block {
+        width: 100%;
+        height: 50%;
+        flex-wrap: wrap;
+
+
+    }
+}
+
+@media (max-width: 850px) {
+    .sena__card1:nth-child(1) {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    .sena__card1:nth-child(2) {
+        display: none;
+    }
+}
+
+// #################################################################################
+
+
+
+.containser__section2 {
+    max-width: 1600px;
+    height: 454px;
+    border: 1px solid #000;
+    flex-wrap: wrap;
+    background-image: url(../../img/backround--2.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1600px 1000px;
+    object-fit: cover;
+    overflow: hidden;
+
+    .section2__block__party {
+        max-width: 70%;
+        height: 100%;
+        flex-wrap: wrap;
+        position: relative;
+        margin: auto;
+
+        h2 {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 34px;
+            padding: 70px 0;
+            color: #FFFFFF;
+        }
+
+        .inp1 {
+            width: 700px;
+            height: 231px;
+
+            float: left;
+            border-radius: 5px;
+            font-size: 18px;
+            color: green;
+            font-family: Arial;
+        }
+
+        .inp2 {
+            width: 300px;
+            height: 40px;
+            width: 340px;
+            height: 65px;
+            border: none;
+            font-size: 20px;
+            margin: 5px 20px;
+            background: #FFFFFF;
+            border: 2px solid #D6D6D6;
+            border-radius: 10px;
+        }
+
+        .kk {
+            background-color: green;
+            border: none;
+            transition: all 0.8s;
+        }
+
+        .kk:hover {
+            background-color: white;
+            color: red;
+        }
+    }
+}
+
+@media (max-width: 1550px) {
+    .inp1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .section2__block__party {
+        inp2 {
+            position: absolute;
+            margin-left: 600px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .section2__block__party {
+        max-width: 100%;
+        height: 100%;
+
+        position: relative;
+        margin: auto;
+
+        .inp2 {
+            margin-top: 300px;
+        }
+
+        h2 {
+            display: none;
+        }
+    }
+}
+
+// ##################################################################################
+
+
+.section__3__container {
+    width: 1600px;
+    height: 500px;
+    margin: 100px auto;
+   
+    flex-wrap: wrap;
+    .menyu__item {
+        font-size: 30px;
+ flex-wrap: wrap;
+    }
+
+    .sectiom3__img {
+        width: 300px;
+        height: 200px;
+       
+        margin: auto;
+    }
+
+    h3 {
+        font-family: Arial;
+        font-size: 22px;
+        padding: 30px 100px;
+        font-weight: 700;
+    }
+
+    p {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+    }
+
+    .menyu__links__block {
+        width: 350px;
+        height: 400px;
+   
+        display: flex;
+        margin-left: 80px;
+        align-items: center;
+    }
+
+}
+@media (max-width: 1400px){
+    .menyu__links__block:nth-child(2){
+        display: none;
+
+    }
+    .name{
+        position: absolute;
+        left: 100px;
+    }
+}

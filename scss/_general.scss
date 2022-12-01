@@ -5,15 +5,57 @@
     transition: all 0.8s;
 }
 body{
-    background-color: gray;
+    background-color: white;
     transition: all 0.8s;
+    scroll-snap-type: mandatory;
+}
+body::-webkit-scrollbar-button{
+    width: 20px;
+    color: red;
+    border-radius: 10px;
 }
 
 
 .container__father {
     position: relative;
-    min-width: 1600px;
-    height: 1800px;
-    margin: 100px auto;
+    max-width: 1600px;
+    height: 2800px;
+    margin:auto;
     flex-wrap: wrap;
+}
+
+.sena__card1:hover{
+    transform: scale(2);
+    background: red;
+    transform: perspective(2);
+}
+.sena__card1:hover:nth-child(2){
+    transform: scale(1, -1);
+    background: red;
+    transform: perspective(2);
+}
+.sena__card1:hover:nth-child(4){
+    transform: scale(-1, 1);
+    background: red;
+    transform: perspective(2);
+}
+
+.block__item__links:hover{
+    transform: scale(1.5);
+    z-index: 5;
+}
+
+.menyu__links__block:hover{
+    transform: rotate(45deg);
+}
+.hero__aksiya{
+    cursor: pointer;
+}
+.hero__aksiya:hover{
+    transform: scale(2);
+    background: linear-gradient(111deg, white gray black);
+}
+.hero__aksiya::after{
+    content: "";
+    transform: translate(200deg);
 }
